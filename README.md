@@ -1,3 +1,7 @@
+> **Warning**
+> This is a fork of [Material Icons for GitHub](https://github.com/Claudiohbsantos/github-material-icons-extension) with some improvements and fixes.
+> Use the original extension if you want to get latest the updates.
+
 <h1 align="center">Material Icons for GitHub</h1>
 
 <div align="center">

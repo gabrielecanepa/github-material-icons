@@ -100,8 +100,8 @@ export function replaceElementWithIcon(iconEl, iconName, fileName, iconPack, pro
  * @returns {string} The matched icon name.
  */
 function lookForMatch(fileName, lowerFileName, fileExtensions, isDir, isSubmodule, isSymlink) {
-  if (isSubmodule) return 'folder-git';
-  if (isSymlink) return 'folder-symlink';
+  if (isSubmodule) return 'folder';
+  if (isSymlink) return 'folder';
 
   // If it's a file.
   if (!isDir) {
@@ -130,13 +130,6 @@ function lookForMatch(fileName, lowerFileName, fileExtensions, isDir, isSubmodul
   }
 
   // Otherwise, it's a folder.
-  // First look in folderNames.
-  if (objectHas(iconMap.folderNames, fileName)) return iconMap.folderNames[fileName];
-
-  // Then check all lowercase.
-  if (objectHas(iconMap.folderNames, lowerFileName)) return iconMap.folderNames[lowerFileName];
-
-  // Fallback into default folder if no matches.
   return 'folder';
 }
 

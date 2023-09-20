@@ -3,7 +3,10 @@ const api = require('@octokit/core');
 const fs = require('fs-extra');
 const fetch = require('node-fetch');
 const stringify = require('json-stable-stringify');
+const { config } = require('dotenv');
 const iconMap = require('../src/icon-map.json');
+
+config();
 
 const vsDataPath = path.resolve(__dirname, '..', 'data');
 const srcPath = path.resolve(__dirname, '..', 'src');

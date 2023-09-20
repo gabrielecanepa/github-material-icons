@@ -18,6 +18,8 @@
     "npm": "^8.0.0"
   },
   "dependencies": {
+    "build": "0.1.4",
+    "dotenv": "16.3.1",
     "selector-observer": "2.1.6"
   },
   "devDependencies": {
